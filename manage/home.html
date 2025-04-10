@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>招聘数据展示后台</title>
+  <link rel="stylesheet" href="./fonts/iconfont.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .app {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+    }
+
+    .aside {
+      width: 190px;
+      background-color:cornflowerblue;
+      display: flex;
+      flex-direction: column;
+      color:white;
+    }
+
+    .aside a {
+      padding-left: 15px;
+    }
+    .aside a:hover {
+      color:red;
+    }
+    .logo {
+      line-height: 60px;
+      font-size: 25px;
+    }
+
+    .menu {
+      line-height: 50px;
+    }
+
+    .menu:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .menu i {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-right: 10px;
+    }
+
+    .main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: #F0F0F0;
+    }
+
+    .main .header {
+      margin: 0;
+      box-sizing: border-box;
+      height: 60px;
+      display: flex;
+      padding: 0 20px;
+      background-color:antiquewhite;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+      justify-content: end;
+    }
+
+    .main .header .info {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .main .header .info img {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .main .header .info span {
+      margin: 0 10px;
+    }
+
+    .btn-danger {
+      background-color: #F56C6C;
+    }
+
+    .btn {
+      height: auto;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 20px;
+      color: white;
+      margin-right: 10px;
+      align-self: center;
+    }
+    .app-container{
+      flex-grow: 1;
+      padding: 20px;
+    }
+    .app-container iframe{
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="aside">
+      <a href="#" class="logo">展示图表数据</a>
+      <a href="../sc/baravg.html" target="content" class="menu">
+        <i class="icon-user1"></i>各城市平均薪水图</a>
+      <a href="../sc/barmin.html" target="content" class="menu">
+        <i class="icon-xuexiaoweishengfuzhi"></i>各城市最低薪水图</a>
+      <a href="../sc/pienum.html" target="content" class="menu">
+          <i class="icon-user1"></i>各城市岗位数量图</a>
+        <a href="../sc/piera.html" target="content" class="menu">
+          <i class="icon-xuexiaoweishengfuzhi"></i>各城市岗位量占比图</a>
+    </div>
+    <div class="main">
+      <div class="header">
+        <div class="info" style="margin: 0 auto; " >
+
+          <span style="margin: 0 auto;">招聘数据展示后台</span>
+        </div>
+    
+      </div>
+      <div class="app-container">
+        <iframe name="content" src="../sc/baravg.html" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
